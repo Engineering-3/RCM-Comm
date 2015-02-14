@@ -1,0 +1,9 @@
+For RCM-comm_v1 board:
+* Move HAND1 so it doesn't conflict with edge of Matchport board (done)
+* Specify proper spacer on 32x2 connector to get right height profile (SAMTEC ESQ-116-13-G-D) (done)
+* Create footprint for new Ethernet cable connector (DigiKey WM4170-ND, Molex 70555-0007) and put into place (done)
+* Indicate on silk screen pin 1 of Matchport - maybe where antenna comes out? (done)
+* Create proper BOM (done)
+* Eliminate the PTH LEDs. (done)
+
+
