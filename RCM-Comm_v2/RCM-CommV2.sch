@@ -15164,7 +15164,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="150.368" y="29.21" size="1.778" layer="98">Designed for Tim Jump of Engineering^3
-by Brian Schmalz of Logic PD</text>
+by Brian Schmalz of Schmalz Haus LLC</text>
 <text x="149.86" y="25.4" size="1.778" layer="98">Copyright 2016 Engineering^3 LLC</text>
 <text x="5.08" y="162.56" size="1.27" layer="98">Copyright 2016 Engineering^3 LLC Copyright and related rights are licensed under the Solderpad Hardware License, 
 Version 0.51 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy 
