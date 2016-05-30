@@ -1,0 +1,23 @@
+For RCM-comm_v1 board:
+* Move HAND1 so it doesn't conflict with edge of Matchport board (done)
+* Specify proper spacer on 32x2 connector to get right height profile (SAMTEC ESQ-116-13-G-D) (done)
+* Create footprint for new Ethernet cable connector (DigiKey WM4170-ND, Molex 70555-0007) and put into place (done)
+* Indicate on silk screen pin 1 of Matchport - maybe where antenna comes out? (done)
+* Create proper BOM (done)
+* Eliminate the PTH LEDs. (done)
+
+RCM-comm_V2 board: Started 01/23/2015
+New verion based on RCM-comm_v1, but with xPico WiFi/xPico Ethernet radio rather than Matchport
+* Create xPico WiFi footprint (done)
+* Wire up xPico in place of macthport
+* Check magnetics as per Lantronix datasheet
+* Add in switches
+* Check that LEDs are connected and labed properly
+* Add in CP header from xPico
+* Connect up SPI from xPico WiFi to BFin SPI with solder jumpers
+* Add in buttons
+
+RCM-Comm_v3 BPS 05/30/2016
+* Added .125 dia holes in new locations for plastic mounting screws
+* Removed two previous .125 plated through holes
+
