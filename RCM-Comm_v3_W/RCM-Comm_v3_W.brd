@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -32,9 +32,9 @@
 <layer number="22" name="bPlace" color="15" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="15" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="15" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="15" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -179,10 +179,10 @@
 <text x="33.909" y="53.0098" size="0.8128" layer="21" ratio="10" rot="SR0">3.3V</text>
 <text x="18.8976" y="13.97" size="1.016" layer="21" ratio="10" rot="SR0">RXD2</text>
 <text x="18.923" y="8.8646" size="1.016" layer="21" ratio="10" rot="SR0">TXD2</text>
-<text x="27.3558" y="54.229" size="1.016" layer="21" ratio="10" rot="SR0">SPI_CS</text>
-<text x="26.8732" y="42.4688" size="1.016" layer="21" ratio="10" rot="SR0">SPI_SCK</text>
-<text x="22.7076" y="54.2798" size="1.016" layer="21" ratio="10" rot="SR0">MOSI</text>
-<text x="22.5298" y="42.4942" size="1.016" layer="21" ratio="10" rot="SR0">MISO</text>
+<text x="27.6606" y="54.2798" size="1.016" layer="21" ratio="10" rot="SR0">SPI_CS</text>
+<text x="26.8224" y="42.3418" size="1.016" layer="21" ratio="10" rot="SR0">SPI_SCK</text>
+<text x="22.3266" y="54.2036" size="1.016" layer="21" ratio="10" rot="SR0">MOSI</text>
+<text x="21.9456" y="42.3418" size="1.016" layer="21" ratio="10" rot="SR0">MISO</text>
 <text x="34.3408" y="55.5244" size="0.8128" layer="21" ratio="10" rot="SR0">GND</text>
 <text x="50.3936" y="37.2618" size="1.4224" layer="22" rot="MR0">  Engineering^3, 2016
 http://engineering3.org</text>
@@ -4974,9 +4974,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -5073,35 +5070,35 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R1" library="rcl" package="R0603" value="2.7k" x="12.7" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.033" y="9.7282" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="10.4394" y="8.89" size="0.4064" layer="27" ratio="10"/>
+<attribute name="VALUE" x="9.1694" y="8.4328" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="R2" library="rcl" package="R0603" value="2.7k" x="12.7" y="15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.8806" y="14.732" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="10.4394" y="14.097" size="0.4064" layer="27" ratio="10"/>
+<attribute name="VALUE" x="8.9916" y="13.4366" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="LED1" library="spark_fun" package="LED-0603" value="GREEN" x="21.59" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.9644" y="61.6077" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="20.574" y="61.0235" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="18.2626" y="60.2869" size="1.016" layer="27"/>
 </element>
 <element name="LED2" library="spark_fun" package="LED-0603" value="GREEN" x="31.75" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.2514" y="61.4807" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="31.115" y="60.7695" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="30.3022" y="60.2107" size="1.016" layer="27"/>
 </element>
 <element name="LED3" library="spark_fun" package="LED-0603" value="GREEN" x="26.67" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.1206" y="61.5061" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="25.781" y="60.8965" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="24.3078" y="60.2361" size="1.016" layer="27"/>
 </element>
 <element name="R3" library="spark_fun" package="0603-RES" value="330" x="21.59" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.6314" y="58.7502" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="22.6822" y="57.3532" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="22.6822" y="57.3532" size="1.016" layer="27"/>
 </element>
 <element name="R5" library="spark_fun" package="0603-RES" value="330" x="31.75" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="32.8422" y="58.8518" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="33.0454" y="57.4294" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="32.8422" y="57.5564" size="1.016" layer="27"/>
 </element>
 <element name="R6" library="spark_fun" package="0603-RES" value="330" x="26.67" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.7622" y="58.8264" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="27.8892" y="57.3278" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="27.8384" y="57.4548" size="1.016" layer="27"/>
 </element>
 <element name="FID1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="5.08" y="3.81" smashed="yes"/>
 <element name="FID2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="50.8" y="63.5" smashed="yes"/>
@@ -5110,45 +5107,43 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$3" library="SchmalzHausPublic" package="ROHS_GARBAGE_5MM" value="ROHS_GARBAGE" x="19.431" y="29.591" smashed="yes" rot="MR0"/>
 <element name="U1" library="xPico" package="LANTRONIX_XPICO" value="LANTRONIX_XPICO" x="38.1" y="21.59" smashed="yes">
 <attribute name="NAME" x="49.3076" y="11.5158" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="35.236" y="11.973" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="32.7468" y="11.4396" size="1.016" layer="27"/>
 </element>
 <element name="JP1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="16.51" y="10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.9357" y="10.4267" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="13.843" y="7.6835" size="0.4064" layer="27"/>
 </element>
 <element name="JP2" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="16.51" y="15.24" smashed="yes">
 <attribute name="NAME" x="19.2659" y="15.2273" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="14.605" y="12.6365" size="0.4064" layer="27"/>
 </element>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="20.32" y="27.94" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-00810" x="20.32" y="27.94" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="19.6342" y="28.8798" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="16.891" y="27.686" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="17.018" y="26.2128" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="20.32" y="20.32" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-00810" x="20.32" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="19.6342" y="21.1836" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="18.415" y="20.447" size="0.4064" layer="27" font="vector" rot="R180"/>
+<attribute name="VALUE" x="18.8214" y="22.5806" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C5" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="51.4096" y="7.62" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CAP-00810" x="51.4096" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="50.6984" y="9.4488" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="50.673" y="5.4864" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="49.3522" y="4.9276" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C6" library="SparkFun-Capacitors" package="0603-CAP" value="10uF" x="48.9712" y="7.5946" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CAP-11015" x="48.9712" y="7.5946" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="47.9552" y="9.4996" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="46.5836" y="7.4168" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="44.6786" y="7.8486" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="10uF" x="20.32" y="17.78" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-11015" x="20.32" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="19.6088" y="18.542" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="17.145" y="17.526" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="15.2146" y="17.2974" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="WAKE" x="6.477" y="36.83" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="10.414" y="35.8902" size="1.016" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="8.001" y="39.878" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="8.001" y="39.878" size="1.016" layer="27"/>
 </element>
 <element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="DEFAULTS" x="6.477" y="29.21" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5158,47 +5153,43 @@ Please make sure your boards conform to these design rules.</description>
 <element name="S3" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="RESET" x="6.477" y="21.59" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="10.414" y="20.8026" size="1.016" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="10.541" y="19.685" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="10.541" y="19.685" size="1.016" layer="27"/>
 </element>
 <element name="C2" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="12.7" y="31.115" smashed="yes">
 <attribute name="PROD_ID" value="CAP-00810" x="12.7" y="31.115" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.938" y="32.004" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="12.065" y="29.718" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="11.4554" y="29.3878" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C8" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="12.7" y="23.495" smashed="yes">
 <attribute name="PROD_ID" value="CAP-00810" x="12.7" y="23.495" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.811" y="24.257" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="14.732" y="23.241" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="10.9728" y="25.5016" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="C9" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="12.7254" y="38.735" smashed="yes">
 <attribute name="PROD_ID" value="CAP-00810" x="12.7254" y="38.735" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="14.732" y="38.354" size="1.016" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="14.8844" y="37.719" size="0.4064" layer="27" font="vector"/>
+<attribute name="VALUE" x="14.7574" y="37.0332" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R4" library="rcl" package="R0603" value="1K" x="12.7" y="34.925" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.938" y="35.814" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="15.494" y="34.798" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="15.494" y="34.798" size="1.016" layer="27"/>
 </element>
 <element name="J3" library="SparkFun-Connectors" package="USB-MICROB" value="USB-MICROB" x="51.181" y="36.322" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-09505" x="51.181" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="49.479" y="41.117" size="1.016" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="44.45" y="38.862" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="43.6626" y="41.7068" size="1.016" layer="27"/>
 </element>
 <element name="JP3" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="24.13" y="46.99" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.9743" y="43.8785" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="19.4056" y="44.7675" size="0.4064" layer="27"/>
 </element>
 <element name="JP4" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="29.21" y="46.99" smashed="yes">
 <attribute name="NAME" x="28.0797" y="43.7769" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="27.178" y="44.8183" size="0.4064" layer="27"/>
 </element>
 <element name="JP5" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="24.13" y="50.8" smashed="yes">
 <attribute name="NAME" x="22.7965" y="52.8955" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="19.431" y="52.4129" size="0.4064" layer="27"/>
 </element>
 <element name="JP6" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK_ROUND" value="JUMPER-PAD-2-NOROUND" x="29.21" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.9527" y="52.8701" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="27.051" y="52.4383" size="0.4064" layer="27"/>
 </element>
 <element name="J4" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="22.86" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.7678" y="39.8018" size="1.27" layer="25" ratio="10"/>
