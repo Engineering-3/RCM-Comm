@@ -21,3 +21,6 @@ RCM-Comm_v3 BPS 05/30/2016
 * Added .125 dia holes in new locations for plastic mounting screws
 * Removed two previous .125 plated through holes
 
+For next version of RCM-Comm board:
+* Use xPico 240 radio
+* 
