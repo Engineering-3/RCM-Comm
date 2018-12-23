@@ -1,0 +1,47 @@
+For RCM-comm_v1 board:
+* Move HAND1 so it doesn't conflict with edge of Matchport board (done)
+* Specify proper spacer on 32x2 connector to get right height profile (SAMTEC ESQ-116-13-G-D) (done)
+* Create footprint for new Ethernet cable connector (DigiKey WM4170-ND, Molex 70555-0007) and put into place (done)
+* Indicate on silk screen pin 1 of Matchport - maybe where antenna comes out? (done)
+* Create proper BOM (done)
+* Eliminate the PTH LEDs. (done)
+
+RCM-comm_V2 board: Started 01/23/2015
+New verion based on RCM-comm_v1, but with xPico WiFi/xPico Ethernet radio rather than Matchport
+* Create xPico WiFi footprint (done)
+* Wire up xPico in place of macthport
+* Check magnetics as per Lantronix datasheet
+* Add in switches
+* Check that LEDs are connected and labed properly
+* Add in CP header from xPico
+* Connect up SPI from xPico WiFi to BFin SPI with solder jumpers
+* Add in buttons
+
+RCM-Comm_v3 BPS 05/30/2016
+* Added .125 dia holes in new locations for plastic mounting screws
+* Removed two previous .125 plated through holes
+
+RCM-Comm_v4 BPS 12/22/2018
+* Use xPico 240 radio
+* Remove all un-used circuitry (USB connector, second serial port, SPI port, etc.)
+* Need to figure out proper hardware for screwing down end of radio. 
+
+(xPico_200_Series_EVK J2 connector use - confirmed working)
+J2 pin  Name    RCM-Bfin J4 pin
+27      TX      4  (RX0)
+28      RTS     17 (RTS/PH0)
+29      RX      3  (TX0)
+30      CTS     23 (CTS/PH6)
+35      GND     2  (GND)
+
+(xPico 240 setup)
+* Use soft AP to log in and configure WLAN profile so that xPico can connect to local WiFi
+* Once that's working log in (username "admin" password "PASSWORD") with the IP address it gets from WiFi network's DHCP server
+* Set up Tunnel 1: Accept: Mode: Always
+* Tunnel 1: Accept: Local Port: 10001
+* Line 1: Configuration: Baud Rate: Custom: 2500000
+* Line 1: Configuration: Interface: RS232
+* Line 1: Configuration: State: Enabled
+* Line 1: Configuration: Protocol: Tunnel
+* Line 1: Configuration: Flow Control: Hardware
+
