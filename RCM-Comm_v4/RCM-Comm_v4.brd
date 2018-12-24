@@ -30,11 +30,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="15" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="15" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
@@ -146,6 +146,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -161,12 +163,12 @@
 <wire x1="53.337" y1="-0.005" x2="2.54" y2="0" width="0" layer="20"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="66.04" width="0" layer="20"/>
 <circle x="47.498" y="5.08" radius="0.254" width="0.254" layer="21"/>
-<text x="15.3162" y="54.102" size="1.4224" layer="21">E^3 RCM-Comm v4 (c) 2018</text>
-<text x="34.3154" y="65.405" size="1.016" layer="21" ratio="10" rot="SR180">SYS</text>
-<text x="24.3332" y="65.4304" size="1.016" layer="21" ratio="10" rot="SR180">3.3V</text>
-<text x="3.302" y="39.8526" size="1.016" layer="21" ratio="10" rot="SR0">WAKE</text>
-<text x="3.302" y="32.2326" size="1.016" layer="21" ratio="10" rot="SR0">DEAFAULT</text>
-<text x="3.302" y="24.6126" size="1.016" layer="21" ratio="10" rot="SR0">RESET</text>
+<text x="15.3162" y="54.102" size="1.4224" layer="21" font="vector">E^3 RCM-Comm v4 (c) 2018</text>
+<text x="35.8394" y="65.278" size="1.016" layer="21" font="vector" ratio="10" rot="SR180">STATUS</text>
+<text x="24.3332" y="65.4304" size="1.016" layer="21" font="vector" ratio="10" rot="SR180">3.3V</text>
+<text x="3.302" y="39.8526" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">WAKE</text>
+<text x="3.302" y="32.2326" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">DEAFAULT</text>
+<text x="3.302" y="24.6126" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">RESET</text>
 <text x="49.0982" y="37.8968" size="1.4224" layer="22" rot="MR0">  Engineering^3, 2018
 http://engineering3.org</text>
 <text x="29.3878" y="29.8196" size="1.4224" layer="22" rot="MR0">RoHS
@@ -179,8 +181,10 @@ Compliant</text>
 <wire x1="46.5582" y1="20.3708" x2="46.5582" y2="51.5112" width="0.1524" layer="21"/>
 <wire x1="24.5364" y1="20.3708" x2="24.5364" y2="51.5112" width="0.1524" layer="21"/>
 <wire x1="24.5364" y1="51.5112" x2="46.5582" y2="51.5112" width="0.1524" layer="21"/>
-<text x="31.1658" y="43.0022" size="1.4224" layer="21">xPico 240
+<text x="31.1658" y="43.0022" size="1.4224" layer="21" font="vector">xPico 240
 </text>
+<text x="17.6276" y="26.8732" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">DEFAULT
+ENABLE</text>
 </plain>
 <libraries>
 <library name="Surveyor">
@@ -4627,6 +4631,68 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X02" urn="urn:adsk.eagle:footprint:37654/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:38039/1" type="box" library_version="1">
+<description>Plated Through Hole
+Specifications:
+Pin count:2
+Pin pitch:0.1"
+
+Example device(s):
+CONN_02
+</description>
+<packageinstances>
+<packageinstance name="1X02"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4820,12 +4886,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="47.5234" y="1.3462" size="1.016" layer="25" font="vector" ratio="12"/>
 </element>
 <element name="LED1" library="spark_fun" package="LED-0603" value="GREEN" x="22.86" y="63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.2344" y="61.6077" size="1.016" layer="25" font="vector" ratio="12"/>
-<attribute name="VALUE" x="19.5326" y="60.2869" size="1.016" layer="27" font="vector" ratio="12"/>
+<attribute name="NAME" x="21.1836" y="61.5315" size="1.016" layer="25" font="vector" ratio="12"/>
+<attribute name="VALUE" x="20.4724" y="60.2107" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="LED2" library="spark_fun" package="LED-0603" value="GREEN" x="33.02" y="63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.5214" y="61.4807" size="1.016" layer="25" font="vector" ratio="12"/>
-<attribute name="VALUE" x="31.5722" y="60.2107" size="1.016" layer="27" font="vector" ratio="12"/>
+<attribute name="NAME" x="31.3944" y="61.5569" size="1.016" layer="25" font="vector" ratio="12"/>
+<attribute name="VALUE" x="30.8864" y="60.1345" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R3" library="spark_fun" package="0603-RES" value="330" x="22.86" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.9014" y="58.7502" size="1.016" layer="25" font="vector" ratio="12"/>
@@ -4870,7 +4936,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="DEFAULTS" x="6.477" y="29.21" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.5664" y="26.8986" size="1.016" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="10.3124" y="26.6954" size="1.016" layer="25" font="vector" ratio="12"/>
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="S3" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="RESET" x="6.477" y="21.59" smashed="yes" rot="R180">
@@ -4878,9 +4944,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="SWCH-08247" x="6.477" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C2" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="12.7" y="31.115" smashed="yes">
-<attribute name="NAME" x="11.8618" y="31.9786" size="1.016" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="12.0396" y="33.147" size="1.016" layer="25" font="vector" ratio="12"/>
 <attribute name="PROD_ID" value="CAP-00810" x="12.7" y="31.115" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="11.2522" y="29.21" size="1.016" layer="27" font="vector" ratio="12"/>
+<attribute name="VALUE" x="11.0236" y="31.9024" size="1.016" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="C8" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="12.7" y="23.495" smashed="yes">
 <attribute name="NAME" x="11.8872" y="24.3332" size="1.016" layer="25" font="vector" ratio="12"/>
@@ -4924,6 +4990,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R10" library="spark_fun" package="0603-RES" value="100K" x="20.32" y="19.05" smashed="yes">
 <attribute name="NAME" x="16.002" y="19.2532" size="1.016" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="15.0876" y="17.907" size="1.016" layer="27" font="vector" ratio="12"/>
+</element>
+<element name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02" package3d_urn="urn:adsk.eagle:package:38039/1" value="" x="13.462" y="28.1178" smashed="yes">
+<attribute name="NAME" x="15.1384" y="29.7942" size="1.016" layer="25" font="vector" ratio="12"/>
+<attribute name="VALUE" x="12.192" y="26.0858" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 </elements>
 <signals>
@@ -5086,7 +5156,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="38.6588" y="23.4442" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="!DEFAULT!">
-<contactref element="S2" pad="3"/>
 <contactref element="C2" pad="1"/>
 <contactref element="J2" pad="23"/>
 <wire x1="39.31" y1="12.61" x2="39.31" y2="10.8112" width="0.1524" layer="1"/>
@@ -5095,15 +5164,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="39.2938" y1="10.795" x2="39.2938" y2="20.5232" width="0.1524" layer="16"/>
 <wire x1="39.2938" y1="20.5232" x2="36.7538" y2="23.0632" width="0.1524" layer="16"/>
 <wire x1="36.7538" y1="23.0632" x2="31.5468" y2="23.0632" width="0.1524" layer="16"/>
-<wire x1="31.5468" y1="23.0632" x2="25.4" y2="29.21" width="0.1524" layer="16"/>
-<wire x1="25.4" y1="29.21" x2="11.4046" y2="29.21" width="0.1524" layer="16"/>
-<wire x1="11.4046" y1="29.21" x2="10.6172" y2="29.9974" width="0.1524" layer="16"/>
-<via x="10.6172" y="29.9974" extent="1-16" drill="0.35"/>
-<wire x1="10.6172" y1="29.9974" x2="10.6172" y2="31.0896" width="0.1524" layer="1"/>
-<wire x1="10.6172" y1="31.0896" x2="11.8246" y2="31.0896" width="0.1524" layer="1"/>
+<wire x1="31.5468" y1="23.0632" x2="26.4922" y2="28.1178" width="0.1524" layer="16"/>
 <wire x1="11.8246" y1="31.0896" x2="11.85" y2="31.115" width="0.1524" layer="1"/>
-<wire x1="10.6172" y1="31.0896" x2="9.2964" y2="31.0896" width="0.1524" layer="1"/>
-<wire x1="9.2964" y1="31.0896" x2="9.271" y2="31.115" width="0.1524" layer="1"/>
+<contactref element="J3" pad="2"/>
+<wire x1="26.4922" y1="28.1178" x2="16.002" y2="28.1178" width="0.1524" layer="16"/>
+<wire x1="11.85" y1="31.115" x2="11.85" y2="30.3648" width="0.1524" layer="1"/>
+<wire x1="11.85" y1="30.3648" x2="12.4968" y2="29.718" width="0.1524" layer="1"/>
+<wire x1="12.4968" y1="29.718" x2="14.3764" y2="29.718" width="0.1524" layer="1"/>
+<wire x1="16.002" y1="28.1178" x2="15.9766" y2="28.1178" width="0.1524" layer="1"/>
+<wire x1="15.9766" y1="28.1178" x2="14.3764" y2="29.718" width="0.1524" layer="1"/>
 </signal>
 <signal name="!EXT_RESET!">
 <contactref element="S3" pad="3"/>
@@ -5325,6 +5394,17 @@ Please make sure your boards conform to these design rules.</description>
 <via x="22.3012" y="16.51" extent="1-16" drill="0.35"/>
 <wire x1="22.3012" y1="16.51" x2="21.17" y2="16.51" width="0.1524" layer="1"/>
 </signal>
+<signal name="N$1">
+<contactref element="S2" pad="3"/>
+<contactref element="J3" pad="1"/>
+<wire x1="13.462" y1="28.1178" x2="12.7254" y2="28.1178" width="0.1524" layer="16"/>
+<wire x1="12.7254" y1="28.1178" x2="10.6934" y2="30.1498" width="0.1524" layer="16"/>
+<wire x1="10.6934" y1="30.1752" x2="10.6934" y2="30.1498" width="0.1524" layer="16"/>
+<via x="10.6934" y="30.1752" extent="1-16" drill="0.35"/>
+<wire x1="9.271" y1="31.115" x2="9.271" y2="30.5308" width="0.1524" layer="1"/>
+<wire x1="9.271" y1="30.5308" x2="9.6266" y2="30.1752" width="0.1524" layer="1"/>
+<wire x1="9.6266" y1="30.1752" x2="10.6934" y2="30.1752" width="0.1524" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -5339,6 +5419,21 @@ Please make sure your boards conform to these design rules.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
