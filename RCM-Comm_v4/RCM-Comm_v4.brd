@@ -29,8 +29,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="15" fill="1" visible="yes" active="yes"/>
@@ -175,7 +175,7 @@ http://engineering3.org</text>
 Compliant</text>
 <circle x="50.292" y="40.513" radius="1.257234375" width="0.254" layer="22"/>
 <wire x1="50.038" y1="41.148" x2="50.038" y2="39.878" width="0.254" layer="22" curve="-202.619865"/>
-<text x="49.3014" y="24.8412" size="1.778" layer="22" ratio="12" rot="MR0">E^3 RCM-Comm_W v4 (c) 2018</text>
+<text x="49.3014" y="24.8412" size="1.778" layer="22" ratio="12" rot="MR0">E^3 RCM-Comm v4 (c) 2018</text>
 <hole x="5.08" y="54.61" drill="3.175"/>
 <hole x="50.8" y="54.61" drill="3.175"/>
 <wire x1="46.5582" y1="20.3708" x2="46.5582" y2="51.5112" width="0.1524" layer="21"/>
