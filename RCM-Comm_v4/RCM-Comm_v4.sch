@@ -11726,12 +11726,6 @@ governing permissions and limitations under the License.</text>
 <wire x1="193.04" y1="101.6" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<wire x1="45.72" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="RX1"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <wire x1="45.72" y1="147.32" x2="48.26" y2="147.32" width="0.1524" layer="91"/>

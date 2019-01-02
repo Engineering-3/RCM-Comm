@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2018-12-29T12:18:59Z",
+        "CreationDate": "2018-12-31T02:51:25Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -10,7 +10,7 @@
         "Part": "Single"
     },
     "Overall": {
-        "BoardThickness": 1.5723,
+        "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
             "ProjectId": "RCM-Comm_v4"
