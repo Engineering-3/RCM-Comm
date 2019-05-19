@@ -3,7 +3,7 @@ RCM-Comm
 
 ![RCM-Comm](http://engineering3.org/wp-content/uploads/GitHub/RCM-Comm.jpg)
 
-This is an interface board that brings wireless communication to the RCM Control Stack. The RCM-Comm accepts the [Lantronix XPico WiFi Embedded Device Server](https://www.lantronix.com/wp-content/uploads/pdf/xPico-Wi-Fi_UG.pdf).
+This is an interface board that brings wireless communication to the RCM Control Stack. The RCM-Comm accepts the [Lantronix XPico WiFi Embedded Device Server](https://www.lantronix.com/wp-content/uploads/pdf/xPico-Wi-Fi_UG.pdf). Please see [Engineering3](http://engineering3.org/) for more information on the complete RCM Control Stack project.
 
 
 Repository Contents
